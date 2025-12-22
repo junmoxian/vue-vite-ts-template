@@ -1,0 +1,40 @@
+// 文件路径: e:\前端脚手架\vite-vue-ts-template\src\styles\theme\_light.scss
+// 浅色主题变量
+
+:root{
+  // 背景颜色
+  --bg-color-primary: #ffffff; // 主要背景色（用于主要内容区域）
+  --bg-color-secondary: #f5f7fa; // 次要背景（用于侧边栏、页眉）
+  --bg-color-hover: #eff2f7; // 悬停时的背景色
+  --bg-color-active: #e4e8f1; // 激活/选中时的背景色
+
+  // 文本颜色
+  --text-color-primary: #303133; // 主要文本色（用于主要内容）
+  --text-color-regular: #606266; // 常规文本色（用于次要信息）
+  --text-color-secondary: #909399; // 次要文本色（用于不太重要的文本）
+  --text-color-placeholder: #c0c4cc; // 占位文本色
+  --text-color-disabled: #a8abb2; // 禁用文本色
+
+  // 边框颜色
+  --border-color-base: #dcdfe6; // 基础边框色
+  --border-color-light: #e4e7ed; // 较浅的边框色
+  --border-color-lighter: #ebeef5; // 更浅的边框色
+  --border-color-extra-light: #f2f6fc; // 最浅的边框色
+
+  // 填充颜色
+  --fill-color-base: #ffffff; // 基础填充色
+  --fill-color-light: #f5f7fa; // 较浅的填充色
+  --fill-color-lighter: #fafafa; // 更浅的填充色
+  --fill-color-extra-light: #fafcff; // 最浅的填充色
+
+  // 操作颜色
+  --color-primary: #409eff;
+  --color-success: #67c23a;
+  --color-warning: #e6a23c;
+  --color-danger: #f56c6c;
+  --color-info: #909399;
+
+  // 盒子阴影
+  --box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  --box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+}

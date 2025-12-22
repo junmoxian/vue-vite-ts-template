@@ -1,0 +1,40 @@
+
+html.dark{
+  // 深色主题变量
+  --box-shadow-light: 0 2px 12px 0 rgba(0, 0, 0, 0.1);
+  --box-shadow-base: 0 2px 4px rgba(0, 0, 0, 0.12), 0 0 6px rgba(0, 0, 0, 0.04);
+  // 盒子阴影
+
+  --color-info: #909399;
+  --color-danger: #f56c6c;
+  --color-warning: #e6a23c;
+  --color-success: #67c23a;
+  --color-primary: #409eff;
+  // 操作颜色
+
+  --fill-color-extra-light: #141414; // 最浅的填充色
+  --fill-color-lighter: #3a3a3a; // 更浅的填充色
+  --fill-color-light: #2a2a2a; // 较浅的填充色
+  --fill-color-base: #1d1d1d; // 基础填充色
+  // 填充颜色
+
+  --border-color-extra-light: #2d2d2f; // 最浅的边框色
+  --border-color-lighter: #3a3a3c; // 更浅的边框色
+  --border-color-light: #444445; // 较浅的边框色
+  --border-color-base: #4c4d4f; // 基础边框色
+  // 边框颜色
+
+  --text-color-disabled: #6c6e72; // 禁用文本色
+  --text-color-placeholder: #8d9095; // 占位文本色
+  --text-color-secondary: #a3a6ad; // 次要文本色（用于不太重要的文本）
+  --text-color-regular: #cfd3dc; // 常规文本色（用于次要信息）
+  --text-color-primary: #e5eaf3; // 主要文本色（用于主要内容）
+  // 文本颜色
+
+  --bg-color-active: #3a3a3a; // 激活/选中时的背景色
+  --bg-color-hover: #2a2a2a; // 悬停时的背景色
+  --bg-color-secondary: #1d1d1d; // 次要背景（用于侧边栏、页眉）
+  --bg-color-primary: #141414; // 主要背景色（用于主要内容区域）
+  // 背景颜色
+
+}
