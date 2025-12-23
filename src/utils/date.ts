@@ -30,3 +30,33 @@ export function calculateTheTimeDifference(startDate?: Date | string | number, e
     return `${diffInSeconds}秒`
   }
 }
+
+export function formatDate(dateInput: Date | string | number, format: string = 'YYYY-MM-DD HH:mm:ss'): string {
+  const date = new Date(dateInput)
+  if (isNaN(date.getTime())) {
+    return ''
+  }
+
+  // helper: left-pad number
+  const pad = (n: number, len = 2) => String(n).padStart(len, '0')
+
+  // token map
+  const tokens: { [key: string]: string } = {
+    YYYY: date.getFullYear().toString(),
+    YY: date.getFullYear().toString().slice(-2),
+    MM: pad(date.getMonth() + 1),
+    M: String(date.getMonth() + 1),
+    DD: pad(date.getDate()),
+    D: String(date.getDate()),
+    HH: pad(date.getHours()),
+    H: String(date.getHours()),
+    mm: pad(date.getMinutes()),
+    m: String(date.getMinutes()),
+    ss: pad(date.getSeconds()),
+    s: String(date.getSeconds()),
+    SSS: String(date.getMilliseconds()).padStart(3, '0'),
+  }
+
+  // Replace tokens; regex lists longer tokens first to avoid partial matches (e.g. YYYY vs YY)
+  return format.replace(/YYYY|YY|MM|M|DD|D|HH|H|mm|m|ss|s|SSS/g, (match) => tokens[match] ?? match)
+}
