@@ -1,6 +1,7 @@
 <template>
   <RouterLink to="/" class="flex-center w-full">
-    <Svg-icon name="vite" class="text-36px" />
+    <!--    <Svg-icon name="vite" class="text-36px" /> -->
+    <icon-local-vite class="text-36px" />
     <h2 v-show="showTitle" class="pl-8px text-16px text-primary font-bold transition duration-300 ease-in-out">
       后台管理系统
     </h2>
@@ -8,7 +9,7 @@
 </template>
 
 <script setup lang="ts">
-import SvgIcon from '@/components/common/svg-icon.vue'
+// import SvgIcon from '@/components/common/svg-icon.vue'
 interface Props {
   showTitle?: boolean
 }

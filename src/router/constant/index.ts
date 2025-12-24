@@ -6,4 +6,9 @@ export const CONSTANT_ROUTES = [
     name: 'Home',
     component: BaseLayout,
   },
+  {
+    path: '/login',
+    name: 'Login',
+    component: () => import('@/views/_builtin/login/index.vue'),
+  },
 ]
